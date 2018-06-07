@@ -19,7 +19,7 @@ export class HomePage {
 
 ionViewDidEnter() {
   console.log('ionViewDidEnter');
-  this.startNFC();
+  // this.startNFC();
 }
 
 startNFC() {
