@@ -1,3 +1,3 @@
-currently broken. stay tuned. 
+partially broken. stay tuned. 
 
 🤖
