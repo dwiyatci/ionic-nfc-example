@@ -10,7 +10,9 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "run:clean": "rimraf node_modules platforms plugins && yarn && ionic cordova run android --device --livereload -c -d"
+    "start:clean": "yarn install:clean && yarn start",
+    "install:clean": "rimraf node_modules platforms plugins && yarn",
+    "start": "ionic cordova run android --device --livereload -c -d"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",

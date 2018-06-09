@@ -5,7 +5,7 @@
     </ion-title>
     <ion-buttons end>
       <button ion-button (click)="startNFC()">
-        Run
+        Start
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -16,6 +16,11 @@
   <p>
     Based on the <a href="https://ionicframework.com/docs/native/nfc">docs</a>.
   </p>
+  <div *ngIf="tag">
+    <p>The tag contains:</p>
+    <pre>{{tag | json}}</pre>
+    <p>Decoded tag ID: {{decodedTagId}}</p>
+  </div>
 </ion-content>
 
 <ion-footer>
